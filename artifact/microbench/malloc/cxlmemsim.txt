@@ -1,0 +1,11 @@
+use cpuid: 0 0
+use cpuid: 1 0
+use cpuid: 2 0
+use cpuid: 3 0
+terminate called after throwing an instance of 'boost::interprocess::interprocess_exception'
+  what():  Permission denied
+ERROR: ld.so: object '/root/.bpftime/libbpftime-agent.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+argv[0] = ./microbench/malloc
+allocating 1000 MB
+allocated - press enter to fill/read
+filling

@@ -1,0 +1,28 @@
+use cpuid: 0 0
+use cpuid: 1 0
+use cpuid: 2 0
+use cpuid: 3 0
+[2025-03-31 20:07:59.945] [info] [bpftime_shm_internal.cpp:34] Global shm initialized
+[2025-03-31 20:07:59.948] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.948] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.948] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.949] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.949] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.949] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.949] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.951] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.951] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.951] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.951] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.952] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.952] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.952] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.952] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.952] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+[2025-03-31 20:07:59.952] [info] [bpftime_shm_json.cpp:138] No tracepoint_id found in json
+perf_event_open: Permission denied
+terminate called without an active exception
+ERROR: ld.so: object '/root/.bpftime/libbpftime-agent.so' from LD_PRELOAD cannot be preloaded (cannot open shared object file): ignored.
+Read Time:           0.00033
+Build Time:          0.00024
+Input graph is directed but tc requires undirected

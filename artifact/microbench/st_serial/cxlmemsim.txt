@@ -1,0 +1,7 @@
+use cpuid: 0 0
+use cpuid: 1 0
+use cpuid: 2 0
+use cpuid: 3 0
+terminate called after throwing an instance of 'boost::interprocess::interprocess_exception'
+  what():  Permission denied
+[2025-03-23 18:29:36.905] [error] [main.cc:245] Exec: failed to create target process
