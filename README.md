@@ -6,7 +6,7 @@ Compute Express Link (CXL) 3.0 introduces powerful memory pooling and promises t
 
 ```bash
 git clone https://github.com/mujahidalrafi/OCEAN.git
-cd CXLMemSim
+cd OCEAN
 sudo ip link add br0 type bridge
 sudo ip link set br0 up
 sudo ip addr add 192.168.100.1/24 dev br0
