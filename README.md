@@ -16,6 +16,7 @@ for i in 0 1; do
     sudo ip link set tap$i up
     sudo ip link set tap$i master br0
 done
+cd qemu_integration
 mkdir build
 cd build
 cmake ..
