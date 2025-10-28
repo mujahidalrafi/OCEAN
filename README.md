@@ -46,3 +46,13 @@ export CXL_DAX_RESET=1  # Reset allocation counter on first process
 export CXL_SHIM_VERBOSE=1
 LD_PRELOAD=/root/libmpi_cxl_shim.so mpirun --allow-run-as-root -np 2 -hostfile hostfile -x CXL_DAX_PATH -x CXL_DAX_RESET -x CXL_SHIM_VERBOSE -x LD_PRELOAD ./gmx_mpi mdrun -s benchMEM.tpr -nsteps 10000 -resethway -ntomp 1
 ```
+
+
+## TIGON
+ 
+```bash
+cd workloads/tigon
+./scripts/setup.sh HOST
+./scripts/run.sh TPCC TwoPLPasha 8 3 mixed 10 15 1 0 1 Clock OnDemand 200000000 1 WriteThrough None 15 5 GROUP_WAL 20000 0 0
+./scripts/run_tpcc.sh ./results/test1
+```
