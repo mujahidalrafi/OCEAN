@@ -26,7 +26,8 @@ sudo make install
 wget https://asplos.dev/about/qemu.img
 wget https://asplos.dev/about/bzImage
 cp qemu.img qemu1.img
-../qemu_integration/launch_qemu_cxl1.sh
+./start_server.sh 9999 topology_simple.txt
+./launch_qemu_cxl1.sh
 # in qemu
 vi /usr/local/bin/*.sh
 # change 192.168.100.10 to 11
@@ -34,8 +35,8 @@ vi /etc/hostname
 # change node0 to node1
 exit
 # out of qemu
-../qemu_integration/launch_qemu_cxl.sh &
-../qemu_integration/launch_qemu_cxl1.sh &
+./launch_qemu_cxl.sh 
+./launch_qemu_cxl1.sh 
 ```
 
 ## GROMACS
