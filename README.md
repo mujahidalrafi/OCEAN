@@ -8,15 +8,8 @@ Compute Express Link (CXL) 3.0 introduces powerful memory pooling and promises t
 git clone https://github.com/mujahidalrafi/OCEAN.git
 cd OCEAN
 bash ./script/setup_host.sh
-sudo ip link add br0 type bridge
-sudo ip link set br0 up
-sudo ip addr add 192.168.100.1/24 dev br0
-# Change this based on the number of hosts you want to simulate:
-for i in 0 1; do
-    sudo ip tuntap add tap$i mode tap
-    sudo ip link set tap$i up
-    sudo ip link set tap$i master br0
-done
+# Assuming 2 hosts simulation. Change this based on the number of hosts you want to simulate:
+bash ./script/setup_network.sh 2
 cd qemu_integration
 mkdir build
 cd build
@@ -27,16 +20,16 @@ wget https://asplos.dev/about/qemu.img
 wget https://asplos.dev/about/bzImage
 cp qemu.img qemu1.img
 ./start_server.sh 9999 topology_simple.txt
-./launch_qemu_cxl1.sh
+sudo ../launch_qemu_cxl1.sh # login as root with password: victor129
 # in qemu
 vi /usr/local/bin/*.sh
 # change 192.168.100.10 to 11
 vi /etc/hostname
 # change node0 to node1
-exit
+shutdown now
 # out of qemu
-./launch_qemu_cxl.sh 
-./launch_qemu_cxl1.sh 
+sudo ../launch_qemu_cxl.sh 
+sudo ../launch_qemu_cxl1.sh 
 ```
 
 ## GROMACS
