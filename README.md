@@ -16,8 +16,8 @@ cd build
 cmake ..
 make -j$(nproc)
 sudo make install
-wget https://asplos.dev/about/qemu.img
 wget https://asplos.dev/about/bzImage
+gdown 1ga5CN3_H1qfReer99w_QcVOYb6R21JHI
 cp qemu.img qemu1.img
 ./start_server.sh 9999 topology_simple.txt
 sudo ../launch_qemu_cxl1.sh # login as root with password: victor129
